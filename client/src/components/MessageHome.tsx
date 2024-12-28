@@ -19,7 +19,7 @@ const fontStyles = {
   "Secondary": "text-black p-2"
 }
 
-const defaultStyles = "rounded-3xl"
+const defaultStyles = "rounded-3xl min-w-64"
 
 export function MessageHome({
   type,
@@ -27,7 +27,7 @@ export function MessageHome({
   content
 }:MessageHomeprop) {
 
-  return <div className={flexStyles[type] + " pt-1"}>
+  return <div className={flexStyles[type] + " pt-2"}>
     <span className={variantStyles[type] + " " + defaultStyles}>
       <div className={fontStyles[type] + " font-medium text-xl pl-2"}>{owner}</div>
       <div className={fontStyles[type] + " pt-3"}>{content}</div>

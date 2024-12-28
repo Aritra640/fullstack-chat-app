@@ -1,8 +1,8 @@
-import { HomePage } from "./pages/HomePage";
+import { ChatRoom } from "./pages/ChatDashboard";
 
 export default function App() {
 
   return <div>
-    <HomePage />
+    <ChatRoom />
   </div>
 }

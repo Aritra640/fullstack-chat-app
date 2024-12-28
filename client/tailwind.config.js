@@ -69,6 +69,23 @@ export default {
         '120': '30rem',
         '400': '60rem',
         '200': '45rem',
+      },
+      minWidth: {
+        '120': '30rem',
+        '400': '60rem',
+        '200': '45rem',
+      },
+      minHeight: {
+        '120': '40rem',
+      },
+      keyframes: {
+        "caret-blink": {
+          "0%,70%,100%": { opacity: "1" },
+          "20%,50%": { opacity: "0" },
+        },
+      },
+      animation: {
+        "caret-blink": "caret-blink 1.25s ease-out infinite",
       }
   	}
   },

@@ -1,9 +1,9 @@
 
 import { Button } from "../components/ui/button";
-import { Message } from "../components/Message";
 import { ChatAreaHome } from "../components/ChatAreaHome";
 
 export  function HomePage() {
+
   return (
     <div className="bg-slate-800 h-screen w-screen fixed">
       <div className="pt-4 pr-3 flex justify-end">
@@ -28,8 +28,7 @@ export  function HomePage() {
       <div className="pt-3 flex justify-center">
         <span className="max-h-72 max-w-12 flex justify-center">
           <ChatAreaHome>
-            <Message owner="user" type="Primary" content="message" />
-            <Message owner="user2" type="Secondary" content="message 2" />
+
           </ChatAreaHome>
         </span>
       </div>
@@ -56,7 +55,7 @@ export  function HomePage() {
         <br />
         <div>
           <div className="text-white text-xl">Benefit-Oriented</div>
-          <div className="pl-3 text-slate-400">
+          <div className="pl-3 pt-2 text-slate-400">
             Effortlessly create private chat rooms for your groups
           </div>
           <div className="pl-3 text-slate-400">
@@ -71,7 +70,7 @@ export  function HomePage() {
           <div className="text-white text-xl">
             Unique & Intriguing
           </div>
-          <div className="pl-3 text-slate-400">
+          <div className="pl-3 pt-2 text-slate-400">
             Your pocket-sized clubhouse
           </div>
           <div className="pl-3 text-slate-400">

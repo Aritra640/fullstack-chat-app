@@ -1,11 +1,17 @@
-import { Textarea } from "./ui/textarea"
+import { Textarea } from "./ui/textarea";
 
 interface InputProp {
-  onClick: ()=>void
+  onClick?: () => void;
 }
 
-export function Input({onClick}:InputProp) {
-  return <div>
-    <Textarea onDoubleClick={onClick} placeholder="                                                                                                  your text goes here" className="text-white rounded-3xl  h-5"  />
-  </div>
+export function Input({ onClick}: InputProp) {
+
+  return (
+    <div>
+      <Textarea
+        onDoubleClick={onClick}
+        className="text-white rounded-3xl  h-3 items-center"
+      ></Textarea>
+    </div>
+  );
 }
